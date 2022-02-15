@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "allowJs": true,
     "alwaysStrict": true,
     "allowUnreachableCode": false,
     "noImplicitAny": true,

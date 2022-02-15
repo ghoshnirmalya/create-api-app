@@ -4,8 +4,6 @@ const app = express();
 const defaultPort = 8080;
 const PORT = process.env.PORT || defaultPort;
 
-app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
-
 app.get("/api", (req, res) => {
   const path = `/api/item`;
 
@@ -19,3 +17,5 @@ app.get("/api/item/:slug", (req, res) => {
 
   res.end(`Item: ${slug}`);
 });
+
+app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));

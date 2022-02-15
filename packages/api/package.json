@@ -1,0 +1,17 @@
+{
+  "private": false,
+  "name": "@create-api/api",
+  "version": "0.0.0",
+  "description": "Not yet decided!",
+  "license": "MIT",
+  "author": "Nirmalya Ghosh",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "dev": "tsup src/index.ts --watch",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
